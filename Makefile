@@ -11,8 +11,9 @@ PRINTF = printf
 #- Source Files                                                               -
 #------------------------------------------------------------------------------
 SOURCES = \
-	src/main.cpp \
+	src/init_funcs.cpp \
 	src/launch_helper.cpp \
+	src/main.cpp \
 	# <- Add more files here
 OBJECTS = ${SOURCES:%.cpp=$(OBJS_DIR)/%.o}
 
