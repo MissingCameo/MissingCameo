@@ -48,7 +48,7 @@ DEFINE_HOOK(0x0049F7A0, CopyProtection_CheckProtectedData, 8)
 	return 0x0049F8A7;
 }
 
-DEFINE_HOOK(0x004068e0, FUNC_004068e0, 1)
+DEFINE_HOOK(0x004068e0, Pseudo_PrintF, 1)
 {
     const char *format = R->ref_Stack<const char *>(0x4);
     DWORD va = R->lea_Stack<DWORD>(0x8);
