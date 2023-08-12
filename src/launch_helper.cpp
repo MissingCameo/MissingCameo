@@ -50,10 +50,10 @@ DEFINE_HOOK(0x0049F7A0, CopyProtection_CheckProtectedData, 8)
 
 DEFINE_HOOK(0x004068e0, FUNC_004068e0, 8)
 {
-    const char* format = R->ref_Stack<const char*>(0x4);
+    const char *format = R->ref_Stack<const char *>(0x4);
     DWORD va = R->lea_Stack<DWORD>(0x8);
     R->Stack<DWORD>(-0x4, va);
-    char buf[1024] = { 0 };
+    char buf[1024] = {0};
     vsprintf_s(buf, format, reinterpret_cast<va_list>(va));
     missing_cameo::missing_cameo::get_instance().log("Catch internal log: {}", buf);
     return 0;
