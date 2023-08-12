@@ -1,3 +1,3 @@
 #pragma once
 
-constexpr const char *k_revision = "52b3d0a58576ef119a7b30d1a8d41fbd7e3eda4a";
+constexpr const char *k_revision = "f4d6cace6fe62437e55897585aa62c7d8b89992e";
